@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,8 +17,9 @@ use App\Http\Controllers\PagesController;
 
 //Route::get('/', 'PagesController@index');
 Route::get('/', [PagesController::class, 'index']);
+Route::get('/mjere', [PagesController::class, 'mjere']);
+Route::get('/statistika', [PagesController::class, 'statistika']);
+Route::get('/vijesti', [PagesController::class, 'vijesti']);
+Route::get('/iskustva', [PagesController::class, 'iskustva']);
 
-
-Route::get('/mjere', function () {
-    return view('pages.mjere');
-});
+Route::resource('posts', PostsController::class);
