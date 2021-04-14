@@ -10,7 +10,7 @@
         <a class="nav-link" href="/vijesti">Vijesti</a>
         <a class="nav-link" href="/statistika">Statistika</a>
         <a class="nav-link" href="/mjere">Mjere</a>
-        <a class="nav-link" href="/iskustva">Iskustva</a>
+        <a class="nav-link" href="/posts">Iskustva</a>
       </div>
     </div>
   </div>
